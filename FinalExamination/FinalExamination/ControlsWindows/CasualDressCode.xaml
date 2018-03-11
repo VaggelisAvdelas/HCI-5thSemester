@@ -1,0 +1,26 @@
+﻿<Window x:Class="FinalExamination.ControlsWindows.CasualDressCode"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalExamination.ControlsWindows"
+        mc:Ignorable="d"
+        Title="CasualDressCode" Height="480" Width="720" WindowStyle="None" ResizeMode="NoResize"
+        Deactivated="Window_Deactivated">
+    <Grid Width="720" Height="480">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF2D879B" Offset="0"/>
+                <GradientStop Color="#FFC99393" Offset="0.703"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Image x:Name="PantsImage" HorizontalAlignment="Left" Height="238" Margin="251,180,0,0" VerticalAlignment="Top" Width="220" Stretch="Fill" Source="/FinalExamination;component/Assets/Wardrobe/casual_jean.png"/>
+        <Image x:Name="ShirtImage" HorizontalAlignment="Left" Height="238" Margin="10,180,0,0" VerticalAlignment="Top" Width="225" Stretch="Fill" Source="/FinalExamination;component/Assets/Wardrobe/casual_shirt.png"/>
+        <Image x:Name="ShoesImage" HorizontalAlignment="Left" Height="238" Margin="486,180,0,0" VerticalAlignment="Top" Width="224" Stretch="Fill" Source="/FinalExamination;component/Assets/Wardrobe/casual_shoes.jpg"/>
+        <Label x:Name="ShirtLabel" Content="Shirt" HorizontalAlignment="Left" Margin="79,133,0,0" VerticalAlignment="Top" Width="94" FontSize="24"/>
+        <Label x:Name="PantsLabel" Content="Pants" HorizontalAlignment="Left" Margin="320,133,0,0" VerticalAlignment="Top" Width="94" FontSize="24"/>
+        <Label x:Name="ShoesLabel" Content="Shoes" HorizontalAlignment="Left" Margin="557,133,0,0" VerticalAlignment="Top" Width="94" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Height="70" Margin="206,49,0,0" TextWrapping="Wrap" Text="Today you could try this look that fits your dress code preference!" VerticalAlignment="Top" Width="324" FontSize="20" Foreground="Black"/>
+
+    </Grid>
+</Window>

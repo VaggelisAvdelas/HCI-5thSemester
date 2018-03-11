@@ -1,0 +1,30 @@
+﻿<Window x:Name="WardrobePage" x:Class="FinalExamination.WardrobeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        xmlns:local="clr-namespace:FinalExamination"
+        mc:Ignorable="d"
+        Title="Wardrobe Control" Height="640" Width="960" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFBAB5DA" Offset="0"/>
+            <GradientStop Color="#FF4735B8" Offset="0.75"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Rectangle Fill="#FFF0C6EE" HorizontalAlignment="Left" Height="200" Margin="665,178,0,0" RadiusY="19.833" RadiusX="19.833" Stroke="Black" VerticalAlignment="Top" Width="167"/>
+        <Label x:Name="MainHeader" Margin="253,10,236,0" FontFamily="Stencil" FontSize="36" FontWeight="Bold" Foreground="#FF040303" Height="60" VerticalAlignment="Top" HorizontalAlignment="Center" Width="465" Content="Wardrobe Control Pad"/>
+        <Image x:Name="WardrobeCamera" HorizontalAlignment="Left" Height="346" VerticalAlignment="Top" Width="500" Margin="100,178,0,0" gif:ImageBehavior.AnimatedSource="Assets/Wardrobe/giphy.gif"/>
+        <ListView x:Name="DressCodeGrid" HorizontalAlignment="Left" Height="200" Margin="665,178,0,0" VerticalAlignment="Top" Width="167" Background="{x:Null}" FontFamily="Segoe UI" BorderBrush="{x:Null}">
+            <Button x:Name="CasualDressCodeButton" Content="Casual" Width="150" Height="40" Background="Gray" FontSize="20" Margin="0,15,0,10" Click="CasualDressCodeButton_Click"/>
+            <Button x:Name="BussinessDressCodeButton" Content="Business" Width="150" Height="40" Background="Gray" FontSize="20" Margin="0,5,0,10" Click="BussinessDressCodeButton_Click"/>
+            <Button x:Name="FormalDressCodeButton" Content="Formal" Width="150" Height="40" Background="Gray" FontSize="20" Margin="0,5,0,0" Click="FormalDressCodeButton_Click"/>
+        </ListView>
+        <Image x:Name="lightsImage" HorizontalAlignment="Left" Height="45" Margin="787,128,0,0" VerticalAlignment="Top" Width="45" Source="Assets/Wardrobe/clothes.png"/>
+        <Label x:Name="DressCodeHeader" HorizontalAlignment="Left" Height="36" Margin="665,128,0,0" Content="Dress Code" Width="133" FontSize="24" Visibility="Visible" VerticalAlignment="Top"/>
+        <Label x:Name="WardrobeCamHeader" HorizontalAlignment="Left" Height="50" Margin="203,128,0,0" Content="Wardrobe Camera" VerticalAlignment="Top" Width="318" FontSize="36" Visibility="Visible"/>
+        <Image x:Name="HelpImage" Source="Assets/helpbutton.png" Width="50" Height="50" Margin="894,551,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" MouseLeftButtonDown="HelpImage_MouseLeftButtonDown"/>
+    </Grid>
+</Window>

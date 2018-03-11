@@ -1,0 +1,13 @@
+﻿<Window x:Name="TvControlsPage" x:Class="FinalExamination.TvControls"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalExamination"
+        mc:Ignorable="d"
+        Title="TvControls" Height="380" Width="222" WindowStyle="None" WindowStartupLocation="CenterScreen"
+        Deactivated="TvControlsWindow_Deactivated" ResizeMode="NoResize">
+    <Grid>
+        <Image x:Name="TvControlsImage" Source="/FinalExamination;component/Assets/Controls/tvcontrols.png"/>
+    </Grid>
+</Window>

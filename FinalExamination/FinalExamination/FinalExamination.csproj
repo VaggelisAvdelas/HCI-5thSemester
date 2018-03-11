@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{42A0B89A-865F-41FE-BF80-B1473970C973}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FinalExamination</RootNamespace>
+    <AssemblyName>FinalExamination</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>app1.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WpfAnimatedGif, Version=1.4.15.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WpfAnimatedGif.1.4.15\lib\net\WpfAnimatedGif.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="ControlsWindows\AddRecipe.xaml.cs">
+      <DependentUpon>AddRecipe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ControlsWindows\CameraView.xaml.cs">
+      <DependentUpon>CameraView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ControlsWindows\CasualDressCode.xaml.cs">
+      <DependentUpon>CasualDressCode.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ControlsWindows\OnlineShopControl.xaml.cs">
+      <DependentUpon>OnlineShopControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ControlsWindows\OvenControls.xaml.cs">
+      <DependentUpon>OvenControls.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ControlsWindows\RadioControls.xaml.cs">
+      <DependentUpon>RadioControls.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ControlsWindows\RecipesSuggestion.xaml.cs">
+      <DependentUpon>RecipesSuggestion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ControlsWindows\WashMachineControls.xaml.cs">
+      <DependentUpon>WashMachineControls.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ControlsWindows\WebBrowserWindow.xaml.cs">
+      <DependentUpon>WebBrowserWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RefrigeratorWindow.xaml.cs">
+      <DependentUpon>RefrigeratorWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ControlsWindows\TvControls.xaml.cs">
+      <DependentUpon>TvControls.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WardrobeWindow.xaml.cs">
+      <DependentUpon>WardrobeWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="ControlsWindows\AddRecipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ControlsWindows\CameraView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ControlsWindows\CasualDressCode.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ControlsWindows\OnlineShopControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ControlsWindows\OvenControls.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ControlsWindows\RadioControls.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ControlsWindows\RecipesSuggestion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ControlsWindows\WashMachineControls.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ControlsWindows\WebBrowserWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="RefrigeratorWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ControlsWindows\TvControls.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WardrobeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app1.manifest" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\MainPlatform\boiler.png" />
+    <Resource Include="Assets\MainPlatform\Camera.png" />
+    <Resource Include="Assets\MainPlatform\coffee.png" />
+    <Resource Include="Assets\MainPlatform\heat.png" />
+    <Resource Include="Assets\MainPlatform\lightbulb.png" />
+    <Resource Include="Assets\MainPlatform\lock.png" />
+    <Resource Include="Assets\MainPlatform\oven.png" />
+    <Resource Include="Assets\MainPlatform\radio.png" />
+    <Resource Include="Assets\MainPlatform\refrigerator.png" />
+    <Resource Include="Assets\MainPlatform\settings.png" />
+    <Resource Include="Assets\MainPlatform\tv.png" />
+    <Resource Include="Assets\MainPlatform\wardrobe.png" />
+    <Resource Include="Assets\MainPlatform\washingmachine.png" />
+    <Resource Include="Assets\MainPlatform\wifi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Controls\radiocontrols.png" />
+    <Resource Include="Assets\Controls\tvcontrols.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Refrigerator\calendar.png" />
+    <Resource Include="Assets\Refrigerator\radio.png" />
+    <Resource Include="Assets\Refrigerator\recipes.png" />
+    <Resource Include="Assets\Refrigerator\weather.png" />
+    <Resource Include="Assets\Refrigerator\web.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Wardrobe\clothes.png" />
+    <Resource Include="Assets\Wardrobe\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\house-splash.png" />
+    <Resource Include="Assets\house-startscreen.png" />
+    <Resource Include="Assets\house-taskbar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Refrigerator\cameraview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Refrigerator\googleweather.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\recipesbackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Recipes\bolognese.png" />
+    <Resource Include="Assets\Recipes\chickenalacream.png" />
+    <Resource Include="Assets\Recipes\pastitsio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Controls\smartovencontrols.png" />
+    <Resource Include="Assets\Controls\washmachinecontrols.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Wardrobe\business_pants.png" />
+    <Resource Include="Assets\Wardrobe\business_shirt.png" />
+    <Resource Include="Assets\Wardrobe\business_shoes.jpg" />
+    <Resource Include="Assets\Wardrobe\casual_jean.png" />
+    <Resource Include="Assets\Wardrobe\casual_shoes.jpg" />
+    <Resource Include="Assets\Wardrobe\formal_shirt.jpg" />
+    <Resource Include="Assets\Wardrobe\tuxedo_pants.jpg" />
+    <Resource Include="Assets\Wardrobe\tuxedo_shoes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Wardrobe\casual_shirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\helpbutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Refrigerator\shopnow.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

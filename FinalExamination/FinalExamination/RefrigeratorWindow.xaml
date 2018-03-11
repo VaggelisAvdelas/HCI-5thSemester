@@ -1,0 +1,34 @@
+﻿<Window x:Name="RefrigeratorPage" x:Class="FinalExamination.RefrigeratorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalExamination"
+        mc:Ignorable="d"
+        Title="Smart Fridge" Height="720" Width="480" ResizeMode="NoResize">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFBAB5DA" Offset="0"/>
+            <GradientStop Color="#FF4735B8" Offset="0.75"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Stroke="Black" VerticalAlignment="Top" Width="472"/>
+        <TextBlock x:Name="FreezerTempText" HorizontalAlignment="Left" Text="Freezer: -18 °C" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="16" Margin="233,34,0,0"/>
+        <TextBlock x:Name="RefrigeratorTempText" HorizontalAlignment="Left" Text="Refrigerator: 2 °C" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="16" Margin="233,6,0,0"/>
+        <TextBlock x:Name="TimeText" HorizontalAlignment="Left" Text="Time" TextWrapping="Wrap" VerticalAlignment="Top" Height="53" Margin="10,6,0,0" Foreground="White" FontSize="18" Width="68"/>
+        <TextBlock x:Name="HumidityText" HorizontalAlignment="Left" Text="Humidity: 35%" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="16" Margin="359,6,0,0"/>
+        <ToggleButton x:Name="IceMakerButton" Content="Ice Maker" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" Background="#335FE8F5" FontSize="22" Margin="359,26,0,0"/>
+        <Button x:Name="CameraButton" Content="Camera View" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" Background="#33A6E4EA" FontSize="16" Height="42" Margin="94,10,0,0" Width="109" Click="CameraButton_Click"/>
+        <Image x:Name="CalendarImage" HorizontalAlignment="Left" Height="115" VerticalAlignment="Top" Width="115" Margin="10,87,0,0" Source="Assets/Refrigerator/calendar.png" MouseLeftButtonDown="CalendarImage_MouseLeftButtonDown"/>
+        <Image x:Name="RadioImage" HorizontalAlignment="Left" Height="115" VerticalAlignment="Top" Width="115" Margin="10,248,0,0" Source="Assets/Refrigerator/radio.png" MouseLeftButtonDown="RadioImage_MouseLeftButtonDown"/>
+        <Image x:Name="RecipesImage" HorizontalAlignment="Left" Height="115" VerticalAlignment="Top" Width="115" Margin="179,248,0,0" Source="Assets/Refrigerator/recipes.png" MouseLeftButtonDown="RecipesImage_MouseLeftButtonDown"/>
+        <Image x:Name="WebImage" HorizontalAlignment="Left" Height="115" VerticalAlignment="Top" Width="115" Margin="328,87,0,0" Source="Assets/Refrigerator/web.png" MouseLeftButtonDown="WebImage_MouseLeftButtonDown"/>
+        <Image x:Name="WeatherImage" HorizontalAlignment="Left" Height="115" VerticalAlignment="Top" Width="115" Margin="179,87,0,0" Source="Assets/Refrigerator/weather.png" MouseLeftButtonDown="WeatherImage_MouseLeftButtonDown"/>
+        <Calendar x:Name="CalendarPopup" HorizontalAlignment="Left" Margin="115,80,0,0" VerticalAlignment="Top" Visibility="Hidden" MouseLeave="CalendarPopup_MouseLeave"/>
+        <Image x:Name="ShowNowImage" HorizontalAlignment="Left" Height="115" VerticalAlignment="Top" Width="115" Margin="328,248,0,0" Source="Assets/Refrigerator/shopnow.png" MouseLeftButtonDown="ShowNowImage_MouseLeftButtonDown"/>
+        <Image x:Name="HelpImage" Source="Assets/helpbutton.png" Width="50" Height="50" Margin="414,631,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" MouseLeftButtonDown="HelpImage_MouseLeftButtonDown"/>
+        <Image x:Name="GoogleWeather" HorizontalAlignment="Left" Height="306" Margin="27,307,0,0" VerticalAlignment="Top" Width="416" Source="Assets/Refrigerator/googleweather.png" Visibility="Hidden" MouseLeave="GoogleWeather_MouseLeave"/>
+
+    </Grid>
+</Window>

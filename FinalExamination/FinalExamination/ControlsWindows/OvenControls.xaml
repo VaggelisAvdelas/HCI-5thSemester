@@ -1,0 +1,14 @@
+﻿<Window x:Name="OvenControlPage" x:Class="FinalExamination.ControlsWindows.OvenControls"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalExamination.ControlsWindows"
+        mc:Ignorable="d"
+        Title="OvenControls" Height="325" WindowStyle="None" Width="200"
+        Deactivated="OvenControlPage_Deactivated" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image x:Name="OvenControlsImage" Source="/FinalExamination;component/Assets/Controls/smartovencontrols.png" Stretch="Fill"/>
+
+    </Grid>
+</Window>

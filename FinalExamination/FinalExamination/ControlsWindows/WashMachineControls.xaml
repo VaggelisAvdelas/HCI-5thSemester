@@ -1,0 +1,14 @@
+﻿<Window x:Name="WashMachineControlPage" x:Class="FinalExamination.ControlsWindows.WashMachineControls"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalExamination.ControlsWindows"
+        mc:Ignorable="d"
+        Title="WashMachineControls" Height="400" Width="500" WindowStyle="None"
+        Deactivated="WashMachineControlPage_Deactivated" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image x:Name="WashMachineControlsImage" Source="/FinalExamination;component/Assets/Controls/washmachinecontrols.png" Stretch="Fill"/>
+
+    </Grid>
+</Window>
